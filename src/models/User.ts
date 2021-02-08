@@ -7,12 +7,17 @@ export class User {
     id: number;
 
     @Column()
-    firstName: string;
+    email: string;
 
     @Column()
-    lastName: string;
+    username: string;
 
     @Column()
-    age: number;
+    password: string;
+
+    @Column({
+        default: "[]"
+    })
+    favorites: string;
 
 }
